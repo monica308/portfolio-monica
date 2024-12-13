@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sriracha&display=swap');
+
+@font-face {
+        font-family: 'Android';
+        src: url('fontes/idroid.otf') format('opentype');
+        font-weight: normal;
+    
+}
+
+:root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-family: var(--fonte-android);
+}
+
+a {
+    font-family: var(--fonte-android);
+    text-decoration: none;
+    padding: 15px;
+    
+}
+
+p {
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;
+    color: white;
+    padding: 15px 30px;
+    text-align: justify;
+}
+
+#menu {
+    line-height: 15px;
+    padding: 5px;
+    background-color: purple;
+    color: white;
+    display: flex;
+   
+}
+
+#apresentacao {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border: 2px solid purple;
+    margin-top: 10px;
+}
+
+#foto-monica {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 80px 0 0 100px;
+}
+
+  a:visited, a:hover {
+    color: #f7b600; 
+    background: white;
+    text-decoration: none;
+    display: block;
+}
+
+
