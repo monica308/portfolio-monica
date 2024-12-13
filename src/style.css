@@ -20,8 +20,9 @@
     --fonte-android: 'Android', cursive;
 }
 
-body {
+html, body {
     background-color: black;
+    min-height: 100vh;
 }
 
 h1 {
