@@ -1,17 +1,11 @@
 @charset "UTF-8";
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sriracha&display=swap');
 
 @font-face {
-        font-family: 'Android';
-        src: url('fontes/idroid.otf') format('opentype');
-        font-weight: normal;
-    
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
 }
 
 :root {
@@ -20,60 +14,80 @@
     --fonte-android: 'Android', cursive;
 }
 
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e borda não ultrapassem a largura */
+}
+
 html, body {
     background-color: black;
     min-height: 100vh;
+    font-family: var(--fonte-padrao);
 }
 
-h1 {
-    color: white;
-    font-family: var(--fonte-android);
-}
-
-a {
-    font-family: var(--fonte-android);
-    text-decoration: none;
-    padding: 15px;
-    
-}
-
-p {
-    font-family: var(--fonte-destaque);
-    font-size: 1.2em;
-    color: white;
-    padding: 15px 30px;
-    text-align: justify;
-}
-
+/* Estilo do Cabeçalho */
 #menu {
     line-height: 15px;
     padding: 5px;
     background-color: purple;
     color: white;
     display: flex;
-   
+    justify-content: space-around; /* Espaço entre os itens */
+    flex-wrap: wrap; /* Garante que o conteúdo se ajuste em telas menores */
 }
 
+a {
+    font-family: var(--fonte-android);
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+
+a:visited, a:hover {
+    color: #f7b600; 
+    background: white;
+    text-decoration: none;
+}
+
+/* Estilo da Apresentação */
 #apresentacao {
     display: flex;
+    flex-wrap: wrap; /* Permite que o conteúdo se ajuste em telas menores */
     align-items: center;
     gap: 50px;
     border: 2px solid purple;
-    margin-top: 10px;
+    margin: 20px auto; /* Centraliza e dá espaço externo */
+    padding: 20px; /* Adiciona espaçamento interno */
+    max-width: 1200px; /* Largura máxima para evitar textos muito extensos */
+    overflow-wrap: break-word; /* Evita estouro de palavras */
 }
 
+/* Estilo da Imagem */
 #foto-monica {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin: 80px 0 0 100px;
+    margin: 0 auto; /* Centraliza a imagem */
 }
 
-  a:visited, a:hover {
-    color: #f7b600; 
-    background: white;
-    text-decoration: none;
-    display: block;
+/* Estilo do Texto */
+h1 {
+    color: white;
+    font-family: var(--fonte-android);
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;
+    color: white;
+    padding: 15px;
+    text-align: justify; /* Justifica o texto */
+    line-height: 1.5; /* Melhora a leitura */
+    overflow-wrap: break-word; /* Garante que palavras longas quebrem */
 }
 
 
