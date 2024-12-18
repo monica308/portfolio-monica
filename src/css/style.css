@@ -59,7 +59,7 @@ a:hover {
 }
 
 /* Seção de apresentação */
-.apresentacao {
+.container {
     display: flex;
     flex-wrap: wrap; /* Quebra os itens em telas menores */
     justify-content: center;
@@ -115,7 +115,7 @@ p {
         padding: 5px;
     }
 
-    #apresentacao {
+    .container {
         flex-direction: column; /* Coloca os itens em coluna */
         padding: 10px;
         gap: 15px;
