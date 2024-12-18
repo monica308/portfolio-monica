@@ -44,7 +44,7 @@ a:hover {
 }
 
 /* Cabeçalho */
-#menu {
+.menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,13 +53,13 @@ a:hover {
     padding: 10px 0;
 }
 
-#menu a {
+.menu a {
     padding: 10px 15px;
     font-size: 1.1em;
 }
 
 /* Seção de apresentação */
-#apresentacao {
+.apresentacao {
     display: flex;
     flex-wrap: wrap; /* Quebra os itens em telas menores */
     justify-content: center;
@@ -88,10 +88,16 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    font-family: var(--fonte-android);
+    font-size: 1.5em;
+}
+
 p {
     font-family: var(--fonte-destaque);
     font-size: 1.1em;
     text-align: justify;
+    text-indent: 20px;
     padding: 10px;
     line-height: 1.4;
     margin: 0 auto;
@@ -120,12 +126,12 @@ p {
         height: 150px;
     }
 
-    #menu {
+    .menu {
         flex-direction: column;
         padding: 5px 0;
     }
 
-    #menu a {
+    .menu a {
         padding: 8px;
         font-size: 1em;
     }
