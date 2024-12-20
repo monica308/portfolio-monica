@@ -74,6 +74,34 @@ a:hover {
     text-align: center;
 }
 
+.projetos {
+    display: flex;
+    flex-wrap: wrap; /* Quebra os itens em linhas, se necessário */
+    justify-content: space-around; /* Distribui os itens uniformemente */
+    align-items: flex-start; /* Alinha os itens no topo */
+    gap: 15px; /* Espaço entre os itens */
+    padding: 20px;
+    max-width: 1200px; /* Largura máxima para telas maiores */
+    margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+.projetos img {
+    width: 120px; /* Largura padrão para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: transform 0.3s ease; /* Adiciona efeito de transição */
+}
+
+.projetos img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente a imagem ao passar o mouse */
+}
+
+.projetos p {
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
 #foto-monica {
     width: 180px;
     height: 180px;
@@ -91,6 +119,10 @@ h1 {
 h3 {
     font-family: var(--fonte-android);
     font-size: 1.5em;
+}
+
+h4 {
+    font-family: var(--fonte-android);
 }
 
 p {
@@ -135,6 +167,15 @@ p {
         padding: 8px;
         font-size: 1em;
     }
+
+    .projetos img {
+        width: 100px; /* Reduz o tamanho das imagens em telas menores */
+    }
+
+    .projetos {
+        gap: 10px; /* Reduz o espaço entre os itens */
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -150,5 +191,13 @@ p {
     #foto-monica {
         width: 120px;
         height: 120px;
+    }
+
+    .projetos img {
+        width: 80px; /* Tamanho ainda menor para telas muito pequenas */
+    }
+
+    .projetos p {
+        font-size: 0.9em; /* Reduz o tamanho do texto */
     }
 }
